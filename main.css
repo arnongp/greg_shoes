@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  
+  padding: 10px 0;
+  background-color: rgb(236, 236, 236);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+header span {
+  color: rgb(1, 132, 73);
+  font-size: 1.3;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+header ul li {
+  margin-left: 20px;
+  padding: 8px 0;
+}
+
+.header, .header a{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  color: rgb(41, 40, 40);
+}
+
+.header ul li a:hover {
+  color: rgb(1, 132, 73);
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.aboutUs img {
+  max-width: 400px;
+  width: 100%;
+}
+
+.aboutUs {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  column-gap: 2%;
+}
+
+.aboutUs h2, .products h2 {
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgb(23, 23, 23);
+  font-family: 'Playfair', serif;
+}
+
+.card {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.card h4, .card p, .card button {
+  margin-bottom: 8px;
+}
+
+.card h4 {
+  font-size: 1em;
+}
+
+.card p {
+  font-size: .8em;
+}
+
+.card button {
+  padding: 5px;
+  font-weight: bold;
+  background-color: rgb(1, 132, 73);
+  color: rgb(243, 251, 247);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 22.25%);
+  column-gap: 1%;
+}
+
+@media screen and (max-width: 640px) {
+  
+  .container {
+    width: 90%;
+  }
+
+  header ul {
+    flex-direction: column;
+  }
+
+  .aboutUs {
+    display: block;    
+  }
+
+  .aboutUs img {
+    margin-bottom: 10px;
+  }
+
+  .cards {
+    display: block;
+    justify-content: center;
+  }
+
+   .card button {
+   margin-bottom: 40px;
+  }
+  
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+  .container {
+    width: 90%;
+  }
+
+  .aboutUs {
+    display: block;    
+  }
+
+  .aboutUs img {
+    margin-bottom: 10px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    column-gap: 4%;
+    row-gap: 4%;
+  }
+
+}
